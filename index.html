@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question
+                    </p>
+                    <h1 class="hud-main-text" id="questionCounter">
+
+                    </h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+
+
+                    </h1>
+                </div>
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn ">Answer 1</button>
+                <button class="btn ">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn-btn">Start</button>
+            <button id="next-btn" class="next-btn-btn hide">Next</button>
+            <button id="submit" class="end-btn-btn hide">Submit Quiz</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    </div>
+</body>
+
+</html>
