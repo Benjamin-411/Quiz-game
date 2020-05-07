@@ -10,7 +10,6 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 
 const correctScore = 1;
-let wrongScore = 0;
 const totalQuestion = 5;
 
 
@@ -22,7 +21,6 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     questionCounterText.innerText = currentQuestionIndex + "/" + totalQuestion;
     scoreText.innerText = correctScore * currentQuestionIndex
-    wrongScore = 0
     setNextQuestion()
 })
 
@@ -55,8 +53,6 @@ function showQuestion(question) {
         button.classList.add('btn')
         if (answer.correct) {
             button.dataset.correct = answer.correct
-        } else {
-            (answer.wrong)
 
         }
         button.addEventListener('click', selectAnswer)
@@ -70,15 +66,6 @@ function resetState() {
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
-    }
-}
-
-
-function endGame() {
-    if (questionCounterText === 5 / 5) {
-        stop
-    } else {
-        questionCounterText === question++
     }
 }
 
@@ -119,11 +106,11 @@ function clearStatusClass(element) {
 
 
 const questions = [{
-        question: 'Who was the winner of the 2005/2006 Uefa Champions League?',
+        question: 'Who was the winner of the 2005/2006 UEFA Champions League?',
         answers: [
             { text: 'Liverpool', correct: false },
             { text: 'AC- Milan', correct: false },
-            { text: 'Bacelona', correct: true },
+            { text: 'Barcelona', correct: true },
             { text: 'Porto', correct: false }
         ]
     },
@@ -146,7 +133,7 @@ const questions = [{
         ]
     },
     {
-        question: 'Who is popularly refered to as "Baba isale awon boys and girls"?',
+        question: 'Who is popularly referred to as "Baba isale awon boys and girls"?',
         answers: [
             { text: 'Mark Essien', correct: false },
             { text: 'Jeffrey Ogah', correct: false },
